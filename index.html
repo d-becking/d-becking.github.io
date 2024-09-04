@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein CV / Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .content {
+            max-width: 909px;
+            margin: 20px auto;
+            padding: 30px; /* More space inside the box */
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .profile-img {
+            margin-right: 20px;
+            margin-top: 84px;
+            flex-shrink: 0; /* Prevent the image from shrinking */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Left align the image and name */
+        }
+        .profile-img img {
+            width: 175px;
+            height: auto; /* Keep the original ratio */
+        }
+        .name {
+            font-size: 1.5em; /* Font size for the name */
+            margin: 18px 0 0 0;
+            color: black;
+            text-align: left; /* Left align name */
+        }
+        .pronouns {
+            font-size: 1em;
+            color: grey;
+            margin-top: 5px;
+            text-align: left; /* Left align pronouns */
+        }
+        .bio {
+            flex-grow: 1;
+            text-align: justify;
+        }
+        .bio a {
+            color: #FF007F; /* Rose color */
+            text-decoration: none;
+        }
+        .bio a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap; /* Ensure all buttons fit in one row */
+            gap: 36px;
+            margin: 9px 0; /* Margin between buttons and content */
+            align-items: center; /* Align items to the center */
+        }
+        .links a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.9em; /* Smaller font size */
+        }
+        .download-cv {
+            text-decoration: none;
+            color: #fff;
+            background-color: #000; /* Black color for the download button */
+            padding: 6px 8px; /* Slightly smaller padding */
+            display: inline-block;
+            font-size: 0.9em; /* Smaller font size */
+        }
+        .download-cv::before {
+            content: '\2193'; /* Unicode character for down arrow */
+            font-size: 1em;
+            margin-right: 5px;
+        }
+        .bio p {
+            margin-bottom: 1em; /* Add space between paragraphs */
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0; /* Adjust margin as needed */
+        }
+        .projects {
+            max-width: 909px;
+            margin: 20px auto;
+            padding: 30px; /* More space inside the box */
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .projects .name {
+            margin-bottom: 10px; /* Adjust margin to shift the title up */
+        }
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .project img {
+            width: 300px;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .project-description {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="profile-img">
+            <img src="graphics/db.jpeg" alt="portrait">
+            <div class="name">Daniel Becking</div>
+            <div class="pronouns">(he/him)</div>
+        </div>
+        <div>
+            <div class="links">
+                <a href="data/CV_2024.pdf" target="_blank" download class="download-cv">
+                    Download CV
+                </a>
+                <a href="https://www.linkedin.com/in/danielbecking" target="_blank">
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+                </a>
+                <a href="https://scholar.google.com/citations?user=9iCPs2AAAAAJ" target="_blank">
+                    <img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar">
+                </a>
+                <a href="https://github.com/d-becking" target="_blank">
+                    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                </a>
+                <a href="https://x.com/danielbecking" target="_blank">
+                    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+                </a>
+            </div>
+            <hr>
+            <div class="bio">
+                I am a research associate and Ph.D. student in the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning.html" target="_blank">Efficient Deep Learning Group</a> at the Fraunhofer Heinrich-Hertz-Institute (HHI) and the Technical University of Berlin, working under the supervision of <a href="https://iphome.hhi.de/samek/" target="_blank">Prof. Wojciech Samek</a>.
+
+                <p>My current research focuses on <strong>neural codecs</strong> like transformer-based general-purpose compressors. I also work on <strong>neural network compression</strong> methods and the efficient <strong>transmission of incremental neural data</strong>, e.g., within distributed learning scenarios like federated or split learning. My methods leverage <strong>explainable AI (XAI)</strong> techniques and concepts of <strong>information theory</strong>.<br>
+                As a member of the Moving Picture Experts Group (MPEG), I contributed to the 1st and 2nd editions of the <a href="https://www.iso.org/standard/85545.html" target="_blank">ISO/IEC 15938-17 standard on Neural Network Coding (NNC)</a>.<br>
+                I completed my M.Sc. in Biomedical Engineering in 2020, under the guidance of Prof. Klaus-Robert Müller at the Technical University of Berlin.<br>
+
+                Before joining Fraunhofer HHI, and during my bachelor's studies in Microsystems Engineering, I was part of the Sensor Nodes & Embedded Microsystems group at Fraunhofer IZM. This experience was invaluable while working on our <a href="https://ieeexplore.ieee.org/document/9440253" target="_blank">low-power neural network accelerator FantastIC4</a>.
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="name">Selected Publications and Projects</div>
+        <div class="project">
+            <img src="graphics/dummy1.jpg" alt="Project 1">
+            <div class="project-description">
+                TBD
+            </div>
+        </div>
+        <div class="project">
+            <img src="graphics/dummy2.jpg" alt="Project 2">
+            <div class="project-description">
+                TBD
+            </div>
+        </div>
+        <div class="project">
+            <img src="graphics/dummy3.jpg" alt="Project 3">
+            <div class="project-description">
+                TBD
+            </div>
+        </div>
+        <div class="project">
+            <img src="graphics/dummy4.jpg" alt="Project 4">
+            <div class="project-description">
+                TBD
+            </div>
+        </div>
+    </div>
+</body>
+</html>
