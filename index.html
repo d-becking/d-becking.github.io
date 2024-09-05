@@ -74,7 +74,7 @@
             text-decoration: none;
             color: #fff;
             background-color: #0C0E03;
-            padding: 6px 12px;
+            padding: 6px 13px;
             /*display: inline-block;*/
             display: inline-flex;
             font-size: 0.85em;
@@ -90,7 +90,7 @@
             text-decoration: none;
             color: #fff;
             background-color: #0C0E03;
-            padding: 0px 12px;
+            padding: 0px 13px;
             font-size: 0.85em;
             margin-top: -5px;
             display: inline-flex;
@@ -197,7 +197,7 @@
 
         @media (max-width: 480px) {
             .profile-img img {
-                width: 100px;
+                width: 120px;
                 max-width: 100%; /* Ensure no overflow */
                 height: auto;
             }
@@ -219,19 +219,19 @@
                 padding: 0px 6px;
                 font-size: 0.8em;
             }
-            .links {
-                flex-direction: column;
-                gap: 15px;
-            }
+            /*.links {*/
+            /*    flex-direction: column;*/
+            /*    gap: 15px;*/
+            /*}*/
             .project img {
-                width: 200px;
+                width: 250px;
                 max-width: 100%;
                 height: auto;
             }
-            .buttons-container {
-                flex-direction: column;
-                gap: 10px;
-            }
+            /*.buttons-container {*/
+            /*    flex-direction: column;*/
+            /*    gap: 1px;*/
+            /*}*/
             .content, .projects {
                 padding: 15px;
             }
@@ -285,7 +285,7 @@
         <div class="project">
             <img src="graphics/PUT_revision.png" alt="TMM">
             <div class="project-description">
-                <h3>IEEE Transactions on Multimedia: Neural Network Coding of Difference Updates for Efficient Distributed Learning Communication</h3>
+                <h3>IEEE Transactions on Multimedia Vol. 26, 2024:<br> Neural Network Coding of Difference Updates for Efficient Distributed Learning Communication</h3>
                 Distributed learning requires frequent communication of neural network update data. For this, we present a set of new compression tools which
                 are specifically tailored to efficiently code incremental neural updates: <strong>Federated BatchNorm folding</strong> (FedBNF), structured and unstructured
                 sparsification, tensor row skipping, quantization optimization and temporal adaptations for improved context-adaptive binary arithmetic coding
@@ -294,7 +294,7 @@
                 and their relationship in synchronous and asynchronous communication scenarios from the bitstream. We benchmark the tools in multiple federated and split
                 learning (<strong>SplitFed</strong>) scenarios using a variety of models including <strong>ViTs</strong>.
                 <p><div class="buttons">
-                    <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="button">View Paper (IEEE Xplore)</a>
+                    <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="button">View Paper (IEEE Xplore Open Access)</a>
                 </div></p>
             </div>
         </div>
