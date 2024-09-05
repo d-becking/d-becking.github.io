@@ -102,15 +102,27 @@
         .project {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         .project img {
             width: 300px;
             height: 200px;
             margin-right: 20px;
+            object-fit: cover;
         }
         .project-description {
             flex-grow: 1;
+        }
+        .button {
+        text-decoration: none;
+        color: #fff;
+        background-color: #4B5E44;
+        padding: 8px 12px;
+        margin-right: 10px;
+        font-size: 0.85em;
+        }
+        .button:hover {
+            background-color: #3a4734;
         }
 
         @media (max-width: 768px) {
@@ -205,9 +217,18 @@
     <div class="projects">
         <div class="name">Selected Publications and Projects</div>
         <div class="project">
-            <img src="graphics/dummy1.jpg" alt="Project 1">
+            <img src="graphics/PUT_revision.png" alt="Project 1">
             <div class="project-description">
-                TBD
+                <h3>IEEE Transactions on Multimedia: Neural Network Coding of Difference Updates for Efficient Distributed Learning Communication</h3>
+                Distributed learning requires a frequent communication of neural network update data. For this, we present a set of new compression tools which
+                are specifically tailored to efficiently code incremental neural network updates: Federated BatchNorm folding (FedBNF), structured and unstructured
+                sparsification, tensor row skipping, quantization optimization and temporal adaptation for improved context-adaptive binary arithmetic coding (CABAC).
+                Furthermore, dNNC provides a new parameter update tree (PUT) mechanism, which allows to identify updates for different neural network parameter sub-sets
+                and their relationship in synchronous and asynchronous neural network communication scenarios. We benchmark the tools in multiple federated and split
+                learning scenarios using a variety of NN models including ViTs.
+                <p><div class="buttons">
+                    <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="button">View Paper</a>
+                </div></p>
             </div>
         </div>
         <div class="project">
