@@ -25,37 +25,19 @@
             margin-right: 20px;
             margin-top: 45px;
             flex-shrink: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
         }
         .profile-img img {
             width: 203px;
             height: auto;
-            /*padding-left: 40px;*/
             padding-right: 20px;
         }
-        .name {
-            font-size: 1.5em;
-            margin: 8px 0 0 0;
-            color: black;
-            text-align: left;
-            /*padding-left: 40px;*/
-        }
-        .pronouns {
-            font-size: 1em;
-            color: grey;
-            margin-top: 5px;
-            text-align: left;
-            /*padding-left: 40px;*/
-        }
-        .title {
+        .name, .title {
             font-size: 1.5em;
             margin: 8px 0 0 0;
             color: black;
             text-align: left;
         }
-        .subtitle {
+        .pronouns, .subtitle {
             font-size: 1em;
             color: grey;
             margin-top: 5px;
@@ -91,10 +73,9 @@
             color: #fff;
             background-color: #4B5E44;
             padding: 6px 13px;
-            /*display: inline-block;*/
             display: inline-flex;
             font-size: 0.85em;
-            margin-top: -5px; /* Adjusted margin-top to shift the button closer to the top */
+            margin-top: -5px;
         }
         .download-cv::before {
             content: '\2193';
@@ -110,21 +91,15 @@
             font-size: 0.85em;
             margin-top: -5px;
             display: inline-flex;
-            /*display: inline-block;*/
-            /*line-height: 1.2em;*/
         }
         .mail-icon {
-            /*color: #BE7388;*/
             color: #fff;
-            font-size: 1.75em; /* Adjust the size to make the icon larger */
-            margin-right: 5px; /* Add space between the icon and text */
+            font-size: 1.75em;
+            margin-right: 5px;
             vertical-align: middle;
         }
         .mail-button span, .mail-button {
-            vertical-align: middle; /* Align both icon and text */
-        }
-        .mail-button:hover {
-            background-color: #4B5E44;
+            vertical-align: middle;
         }
         .bio p {
             margin-bottom: 1em;
@@ -161,7 +136,7 @@
         }
         .buttons-container {
             display: flex;
-            gap: 10px; /* Optional: Add some space between the buttons */
+            gap: 10px;
         }
         .button {
             text-decoration: none;
@@ -175,8 +150,8 @@
             background-color: #0C0E03;
         }
         .special-link {
-            color: #BE7388; /* Change to your desired color */
-            text-decoration: none; /* Optional: remove underline */
+            color: #BE7388;
+            text-decoration: none;
         }
         @media (max-width: 768px) {
             .content {
@@ -190,7 +165,7 @@
             }
             .profile-img img {
                 width: 250px;
-                max-width: 100%; /* Ensure no overflow */
+                max-width: 100%;
                 height: auto;
             }
             .bio {
@@ -206,7 +181,7 @@
             .project img {
                 margin-right: 0;
                 margin-bottom: 10px;
-                width: 250px;
+                width: 300px;
                 height: auto;
                 max-width: 100%;
             }
@@ -215,16 +190,14 @@
         @media (max-width: 480px) {
             .profile-img img {
                 width: 200px;
-                max-width: 100%; /* Ensure no overflow */
+                max-width: 100%;
                 height: auto;
             }
             .name {
                 font-size: 1.2em;
-                padding-left: 0px;
             }
             .pronouns {
                 font-size: 0.9em;
-                padding-left: 0px;
             }
             .button {
                 padding: 4px 6px;
@@ -238,19 +211,11 @@
                 padding: 0px 6px;
                 font-size: 0.8em;
             }
-            /*.links {*/
-            /*    flex-direction: column;*/
-            /*    gap: 15px;*/
-            /*}*/
             .project img {
-                width: 200px;
+                width: 250px;
                 max-width: 100%;
                 height: auto;
             }
-            /*.buttons-container {*/
-            /*    flex-direction: column;*/
-            /*    gap: 1px;*/
-            /*}*/
             .content, .projects {
                 padding: 15px;
             }
@@ -345,7 +310,6 @@
         </div>
         <hr>
         <div class="project">
-<!--            <img src="graphics/dummy3.jpg" alt="">-->
             <div class="project-description">
                 [...] TBC
             </div>
@@ -355,5 +319,4 @@
 <footer style="display: flex; justify-content: center; align-items: center; height: 100px; background-color: #f4f4f4;">
     <a href="impressum.html" target="_blank" style="color: grey; text-decoration: none; font-size: 18px;">Impressum</a>
 </footer>
-
 </html>
