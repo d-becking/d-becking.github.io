@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To The Fifty Engineers</title>
+    <title>Daniel Becking</title>
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
         .content {
-            max-width: 1024px;
+            max-width: 999px;
             margin: 20px auto;
             padding: 30px;
             background: #fff;
@@ -42,6 +42,11 @@
             color: grey;
             margin-top: 5px;
             text-align: left;
+        }
+        .subsubtitle {
+            font-style: italic;
+            margin-top: -15px;
+            margin-bottom: 10px;
         }
         .bio {
             flex-grow: 1;
@@ -110,13 +115,13 @@
             margin: 20px 0;
         }
         .projects {
-            max-width: 1024px;
+            max-width: 999px;
             margin: 20px auto;
             padding: 30px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .projects .name {
+        .projects .title {
             margin-bottom: 10px;
         }
         .project {
@@ -152,6 +157,21 @@
         .special-link {
             color: #BE7388;
             text-decoration: none;
+            font-weight: bold;
+        }
+        .news-box {
+            max-width: 999px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .news-box .title {
+            margin-bottom: 15px;
+        }
+        .spaced-news-list li {
+            margin-bottom: 10px; /* Adjust this value as needed */
+            margin-left: 20px;
         }
         @media (max-width: 768px) {
             .content {
@@ -186,7 +206,6 @@
                 max-width: 100%;
             }
         }
-
         @media (max-width: 480px) {
             .profile-img img {
                 width: 200px;
@@ -216,11 +235,10 @@
                 max-width: 100%;
                 height: auto;
             }
-            .content, .projects {
+            .content, .projects, .news-box {
                 padding: 15px;
             }
         }
-
     </style>
 </head>
 <body>
@@ -233,7 +251,7 @@
         <div>
             <hr>
             <div class="bio">
-                I am a research associate and Ph.D. student in the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning.html" target="_blank"><strong>Efficient Deep Learning Group</strong></a> at the Fraunhofer Heinrich-Hertz-Institute (HHI) and the Technical University of Berlin, working under the supervision of <a href="https://iphome.hhi.de/samek/" target="_blank"><strong>Prof. Wojciech Samek</strong></a>.
+                I am a research associate and Ph.D. student in the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning.html" target="_blank"><strong>Efficient Deep Learning Group</strong></a> at the Fraunhofer Heinrich-Hertz-Institute (HHI) and the Technical University of Berlin, working under the supervision of <a href="https://iphome.hhi.de/samek/" target="_blank"><strong>Wojciech Samek</strong></a>.
 
                 <p>My current research interests lie in the domain of <strong>neural codecs</strong> like language
                     model-based general-purpose compressors. I also work on methods specifically tailored to
@@ -244,7 +262,7 @@
                 As a member of the Moving Picture Experts Group (MPEG), I contributed to the 1st and 2nd editions of
                     the <a href="https://www.iso.org/standard/85545.html" target="_blank"><strong>ISO/IEC 15938-17 standard
                         on Neural Network Coding (NNC)</strong></a>.<br>
-                I completed my M.Sc. in Biomedical Engineering in 2020, under the guidance of Prof. Klaus-Robert Müller at
+                I completed my M.Sc. in Biomedical Engineering in 2020, under the guidance of Klaus-Robert Müller at
                     the Technical University of Berlin.<br>
 
                 Before joining Fraunhofer HHI, and during my bachelor's studies in Microsystems Engineering, I was part
@@ -273,6 +291,54 @@
         </div>
     </div>
 
+    <div class="news-box">
+        <hr>
+        <div class="title">Latest News</div>
+        <ul class="spaced-news-list">
+
+            <li><strong>2024/07</strong>: At the <a href="https://www.mpeg.org/meetings/mpeg-147/" target="_blank" class="special-link">147th MPEG meeting</a>
+                in Sapporo I contributed to the finalization of the <a href="https://standards.iso.org/iso-iec/15938/-18/ed-2/en/" target="_blank" class="special-link">Conformance
+                    and Reference Software (INCTM)</a> for enc-/decoding bitstreams in compliance with the 2nd edition of the
+                <a href="https://www.iso.org/standard/85545.html" target="_blank" class="special-link">Neural Network Coding (NNC) standard</a>. Additionally,
+                we issued a preliminary working draft for the future of NNC and began collecting potential new use cases.</li>
+
+            <li><strong>2024/01</strong>: My Transactions on Multimedia journal paper on coding and transmitting neural data across client devices is finally <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="special-link">published (Open Access)</a>.</li>
+
+            <li><strong>2023/07</strong>: <a href="https://neuralcompression.github.io/workshop23" target="_blank" class="special-link">ICML Neural Compression Workshop</a>: NNCodec was awarded a Spotlight. <a href="https://openreview.net/forum?id=5VgMDKUgX0" target="_blank" class="special-link"> [Paper]</a>
+            <a href="https://datacloud.hhi.fraunhofer.de/s/QFKiqCYE3Q8ptAy" target="_blank" class="special-link"> [Poster]</a>
+            </li>
+
+            <li><strong>2022/06</strong>: <a href="https://sites.google.com/view/fedvision" target="_blank" class="special-link">CVPR FedVision Worshop</a>:
+                I gave a talk on Adaptive Differential Filters for Fast and Communication-Efficient Federated Learning.
+                <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.crcv.ucf.edu%2Fchenchen%2FFedVision-Workshop-CVPR2022%2F2022-06-cvprw-cross%2520device%2520FL.pdf&sa=D&sntz=1&usg=AOvVaw2wpx5DwRUnQgm9OlaAXykS" target="_blank" class="special-link">[Slides]</a>
+                <a href="https://youtu.be/SKQny9eVX5o" target="_blank" class="special-link">[Video]</a>
+                <a href="https://openaccess.thecvf.com/content/CVPR2022W/FedVision/html/Becking_Adaptive_Differential_Filters_for_Fast_and_Communication-Efficient_Federated_Learning_CVPRW_2022_paper.html" target="_blank" class="special-link">[Paper]</a>
+            </li>
+
+            <li><strong>2022/04</strong>: The "xxAI - Beyond Explainable AI" book, including my chapter <i>ECQx: Explainability-Driven Quantization for Low-Bit and Sparse DNNs</i> is now published.
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-04083-2_14" target="_blank" class="special-link">[Chapter]</a>
+                <a href="https://github.com/d-becking/ECQx" target="_blank" class="special-link">[Code]</a>
+            </li>
+
+            <li><strong>2021/05</strong>:
+                We teamed up with the Technical University of Berlin on <i>FantastIC4</i>, a 4-bit hardware-software co-design for Multilayer Perceptrons in FPGA and ASIC.
+                For details on the architecture and results, check
+                <a href="https://ieeexplore.ieee.org/abstract/document/9440253" target="_blank" class="special-link">IEEE Open Journal of Circuits and Systems</a>.
+            </li>
+
+            <li><strong>2020/06</strong>: The investigations from my
+                <a href="https://www.researchgate.net/profile/Daniel-Becking/publication/354987516_Finding_Storage-_and_Compute-Efficient_Convolutional_Neural_Networks/links/6156f041a6fae644fbb6a2a8/Finding-Storage-and-Compute-Efficient-Convolutional-Neural-Networks.pdf" target="_blank" class="special-link">master's thesis </a>
+                led to the <i>Entropy-Constrained Trained Ternarization (EC2T)</i> paper, which wil be presented as oral (virtually) at the CVPR Workshop on Efficient Deep Learning in Computer Vision.
+                <a href="https://openaccess.thecvf.com/content_CVPRW_2020/html/w40/Marban_Learning_Sparse__Ternary_Neural_Networks_With_Entropy-Constrained_Trained_Ternarization_CVPRW_2020_paper.html" target="_blank" class="special-link">[Paper]</a>
+                <a href="https://github.com/d-becking/efficientCNNs" target="_blank" class="special-link">[Code]</a>
+            </li>
+
+            <li><strong>2019/12</strong>: <a href="https://micronet-challenge.github.io/leaderboard.html" target="_blank" class="special-link">NeurIPS MicroNet Challenge</a>: My submitted ternary neural networks scored among the top-5. <a href="https://github.com/d-becking/neurips-2019-micronet-challenge/tree/master" target="_blank" class="special-link">[Code]</a></li>
+
+        </ul>
+        <hr>
+    </div>
+
     <div class="projects">
         <div class="title">Selected Publications and Projects</div>
         <hr>
@@ -280,11 +346,11 @@
             <img src="graphics/PUT_revision.png" alt="TMM">
             <div class="project-description">
                 <h4>Neural Network Coding of Difference Updates for Efficient Distributed Learning Communication <div class="subtitle">IEEE Transactions on Multimedia Vol. 26, 2024</div></h4>
-
+                <div class="subsubtitle">Co-authors: Karsten Müller, Paul Haase, Heiner Kirchhoffer, Gerhard Tech, Wojciech Samek, Heiko Schwarz, Detlev Marpe, Thomas Wiegand</div>
                 Distributed learning requires frequent communication of neural network update data. For this, we present a set of new compression tools which
                 are specifically tailored to efficiently code incremental neural updates: <strong>Federated BatchNorm folding</strong> (FedBNF), structured and unstructured
                 sparsification, tensor row skipping, quantization optimization and temporal adaptations for improved context-adaptive binary arithmetic coding
-                (<a href="https://www.hhi.fraunhofer.de/en/departments/vca/research-groups/video-coding-technologies/research-topics/past-research-topics/context-based-adaptive-binary-arithmetic-coding-cabac.html" target="_blank" class="special-link"><strong>CABAC</strong></a>).
+                (<a href="https://www.hhi.fraunhofer.de/en/departments/vca/research-groups/video-coding-technologies/research-topics/past-research-topics/context-based-adaptive-binary-arithmetic-coding-cabac.html" target="_blank" class="special-link">CABAC</a>).
                 Furthermore, we introduce the parameter update tree (PUT) syntax, which allows to identify updates for different neural network parameter sub-sets
                 and their relationship in synchronous and asynchronous communication scenarios from the bitstream. We benchmark the tools in multiple federated and split
                 learning (<strong>SplitFed</strong>) scenarios using a variety of models including <strong>ViTs</strong>.
@@ -298,7 +364,10 @@
             <img src="graphics/nncodec.png" alt="NNCodec">
             <div class="project-description">
                 <h4>[Spotlight] Paper at the Neural Compression Workshop <div class="subtitle">ICML 2023</div></h4>
-                NNCodec is the first open source and standard-compliant implementation of the Neural Network Coding (NNC) standard (ISO/IEC 15938-17), and describes its software architecture and main coding tools.
+                <div class="subsubtitle">Co-authors: Paul Haase, Heiner Kirchhoffer, Karsten Müller, Wojciech Samek, Detlev Marpe</div>
+                NNCodec is the first open source and standard-compliant implementation of the
+                <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning/research-topics/neural-network-compression.html" target="_blank" class="special-link">Neural Network Coding (NNC)</a> standard
+                <a href="https://www.iso.org/standard/85545.html" target="_blank" class="special-link">(ISO/IEC 15938-17)</a>, and describes its software architecture and main coding tools.
                 We analyzed the underlying neural network weight distributions and information content to examine higher compression gains compared to other entropy codes like Huffman code,
                 but also that the average codeword length of NNCodec is often below the <strong>Shannon entropy bound</strong>. By introducing specifically trained local scaling parameters, NNCodec can compensate for quantization errors to a certain degree.
                 <p><div class="buttons-container">
@@ -310,10 +379,46 @@
         </div>
         <hr>
         <div class="project">
+            <img src="graphics/BerDiBa.png" alt="BerDiBa">
             <div class="project-description">
-                [...] TBC
+                <h4>Berlin Digital Rail Operations (BerDiBa) funded by the state of Berlin and the EU</h4>
+                <div class="subsubtitle">Co-authors: Nico Harder</div>
+                In the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/projects/berdiba.html" target="_blank" class="special-link">BerDiBa</a>
+                project, I developed highly efficient models for semantic segmentation of image data from
+                the driver's cab perspective of autonomous trains. I extended my
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-04083-2_14" target="_blank" class="special-link">explainability-driven, entropy-constrained
+                quantization method (ECQx)</a>, reducing DeepLabV3 precision to 2-4 bits and introducing high sparsity without
+                degrading performance. Additionally, we applied a specialized <strong>semantic knowledge distillation</strong> technique to
+                extract compact student networks. Using
+                <a href="https://www.nature.com/articles/s42256-023-00711-8" target="_blank" class="special-link">Concept Relevance Propagation (CRP)</a>,
+                we identified network subgraphs highly relevant to specific classes or concepts, which can be dynamically
+                activated or deactivated through a gating mechanism: <strong>Mixture-of-Relevant-Experts</strong>.
+                <p><div class="buttons-container">
+                    <a href="data/BerDiBa_MS_AP1-2_8.pdf" target="_blank" class="button">Slides</a>
+                </div></p>
             </div>
         </div>
+        <hr>
+        <div class="project">
+            <img src="graphics/ecqx.png" alt="BerDiBa">
+            <div class="project-description">
+                <h4>ECQx: Explainability-Driven Quantization for Low-Bit and Sparse DNNs
+                    <div class="subtitle">xxAI - Beyond Explainable AI, Lecture Notes in Computer Science (LNAI Vol. 13200)</div></h4>
+                <div class="subsubtitle">Co-authors: Maximilian Dreyer, Wojciech Samek, Karsten Müller, Sebastian Lapuschkin</div></h4>
+                The ECQx method leverages concepts of explainable AI (XAI) and of information theory in the quantization-aware training paradigm: Instead of assigning weight values solely based
+                on their proximity to the quantization clusters, the method considers weight relevances obtained from
+                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140" target="_blank" class="special-link">Layer-wise Relevance Propagation (LRP)</a>
+                and the information content of the clusters (entropy optimization). A key insight is that <strong>weight magnitude is not necessarily correlated with weight relevance</strong>,
+                allowing us to preserve relevant weights from being quantized to zero and deactivate irrelevant high-magnitude weights/neurons.
+
+                <p><div class="buttons-container">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-04083-2_14" target="_blank" class="button">View Paper (Springer Link)</a>
+                    <a href="https://github.com/d-becking/ECQx" target="_blank" class="button">View Code</a>
+                </div></p>
+            </div>
+        </div>
+        <hr>
+        Find a complete list of my publications on <a href="https://scholar.google.com/citations?user=9iCPs2AAAAAJ" target="_blank" class="special-link">Google Scholar</a>.
     </div>
 </body>
 <footer style="display: flex; justify-content: center; align-items: center; height: 100px; background-color: #f4f4f4;">
