@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Becking</title>
     <style>
+        :root {
+            --mygreen: #4B5E44;
+            --myrose: #BE7388;
+        }
         body {
             font-family: Helvetica, Arial, sans-serif;
             margin: 0;
@@ -53,7 +57,7 @@
             text-align: justify;
         }
         .bio a {
-            color: #BE7388;
+            color: var(--myrose);
             text-decoration: none;
         }
         .bio a:hover {
@@ -76,7 +80,7 @@
         .download-cv {
             text-decoration: none;
             color: #fff;
-            background-color: #4B5E44;
+            background-color: var(--mygreen);
             padding: 6px 13px;
             display: inline-flex;
             font-size: 0.85em;
@@ -91,7 +95,7 @@
         .mail-button {
             text-decoration: none;
             color: #fff;
-            background-color: #4B5E44;
+            background-color: var(--mygreen);
             padding: 0px 13px;
             font-size: 0.85em;
             margin-top: -5px;
@@ -146,7 +150,7 @@
         .button {
             text-decoration: none;
             color: #fff;
-            background-color: #4B5E44;
+            background-color: var(--mygreen);
             padding: 8px 12px;
             margin-right: 10px;
             font-size: 0.85em;
@@ -155,7 +159,7 @@
             background-color: #0C0E03;
         }
         .special-link {
-            color: #BE7388;
+            color: var(--myrose);
             text-decoration: none;
             font-weight: bold;
         }
@@ -251,21 +255,24 @@
         <div>
             <hr>
             <div class="bio">
-                I am a research associate and Ph.D. student in the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning.html" target="_blank"><strong>Efficient Deep Learning Group</strong></a> at the Fraunhofer Heinrich-Hertz-Institute (HHI) and the Technical University of Berlin, working under the supervision of <a href="https://iphome.hhi.de/samek/" target="_blank"><strong>Wojciech Samek</strong></a>.
+                I am a research associate and Ph.D. student in the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning.html" target="_blank"><strong>Efficient Deep Learning Group</strong></a> at the Fraunhofer Heinrich-Hertz-Institute (HHI) and the Technical University of Berlin, supervised by <a href="https://iphome.hhi.de/samek/" target="_blank"><strong>Wojciech Samek</strong></a>.
 
                 <p>My current research interests lie in the domain of <strong>neural codecs</strong> like language
-                    model-based general-purpose compressors. I also work on methods specifically tailored to
+                    model-based general-purpose compressors. I am also working on methods specifically tailored to
                     <strong>compression of neural networks</strong> and the efficient <strong>transmission of
                         incremental neural data</strong>, e.g., within distributed learning scenarios like federated
                     or split learning. My methods leverage <strong>explainable AI (XAI)</strong> techniques and concepts
                     of <strong>information theory</strong>.<br>
-                As a member of the Moving Picture Experts Group (MPEG), I contributed to the 1st and 2nd editions of
-                    the <a href="https://www.iso.org/standard/85545.html" target="_blank"><strong>ISO/IEC 15938-17 standard
-                        on Neural Network Coding (NNC)</strong></a>.<br>
-                I completed my M.Sc. in Biomedical Engineering in 2020, under the guidance of Klaus-Robert Müller at
+
+                    As a regular attendee of Moving Picture Experts Group (MPEG) meetings since 2020, I contributed to the
+                    first and second editions of the <a href="https://www.iso.org/standard/85545.html" target="_blank"><strong>ISO/IEC 15938-17 </strong></a>
+                    standard for
+                    <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning/research-topics/neural-network-compression.html" target="_blank" class="special-link">Neural Network Coding (NNC)</a>.<br>
+
+                    I completed my M.Sc. in Biomedical Engineering in 2020, under the guidance of Klaus-Robert Müller at
                     the Technical University of Berlin.<br>
 
-                Before joining Fraunhofer HHI, and during my bachelor's studies in Microsystems Engineering, I was part
+                    Before joining Fraunhofer HHI, and during my bachelor's studies in Microsystems Engineering, I was part
                     of the Sensor Nodes & Embedded Microsystems group at Fraunhofer IZM. This experience was invaluable
                     while working on our <a href="https://ieeexplore.ieee.org/document/9440253" target="_blank"><strong>FantastIC4 low-power neural network accelerator</strong></a>.
             </div>
@@ -302,7 +309,7 @@
                 <a href="https://www.iso.org/standard/85545.html" target="_blank" class="special-link">Neural Network Coding (NNC) standard</a>. Additionally,
                 we issued a preliminary working draft for the future of NNC and began collecting potential new use cases.</li>
 
-            <li><strong>2024/01</strong>: My Transactions on Multimedia journal paper on coding and transmitting neural data across client devices is finally <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="special-link">published (Open Access)</a>.</li>
+            <li><strong>2024/01</strong>: IEEE Transactions on Multimedia published my journal paper on coding and transmitting neural data across devices for efficient distributed learning communication. <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="special-link">[Paper]</a></li>
 
             <li><strong>2023/07</strong>: <a href="https://neuralcompression.github.io/workshop23" target="_blank" class="special-link">ICML Neural Compression Workshop</a>: NNCodec was awarded a Spotlight. <a href="https://openreview.net/forum?id=5VgMDKUgX0" target="_blank" class="special-link"> [Paper]</a>
             <a href="https://datacloud.hhi.fraunhofer.de/s/QFKiqCYE3Q8ptAy" target="_blank" class="special-link"> [Poster]</a>
@@ -315,7 +322,7 @@
                 <a href="https://openaccess.thecvf.com/content/CVPR2022W/FedVision/html/Becking_Adaptive_Differential_Filters_for_Fast_and_Communication-Efficient_Federated_Learning_CVPRW_2022_paper.html" target="_blank" class="special-link">[Paper]</a>
             </li>
 
-            <li><strong>2022/04</strong>: The "xxAI - Beyond Explainable AI" book, including my chapter <i>ECQx: Explainability-Driven Quantization for Low-Bit and Sparse DNNs</i> is now published.
+            <li><strong>2022/04</strong>: The "xxAI - Beyond Explainable AI" book, including my chapter <i>ECQ<sup>x</sup>: Explainability-Driven Quantization for Low-Bit and Sparse DNNs</i>, is now published.
                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-04083-2_14" target="_blank" class="special-link">[Chapter]</a>
                 <a href="https://github.com/d-becking/ECQx" target="_blank" class="special-link">[Code]</a>
             </li>
@@ -365,11 +372,12 @@
             <div class="project-description">
                 <h4>[Spotlight] Paper at the Neural Compression Workshop <div class="subtitle">ICML 2023</div></h4>
                 <div class="subsubtitle">Co-authors: Paul Haase, Heiner Kirchhoffer, Karsten Müller, Wojciech Samek, Detlev Marpe</div>
-                NNCodec is the first open source and standard-compliant implementation of the
+                NNCodec is the first open-source, standard-compliant implementation of the
                 <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning/research-topics/neural-network-compression.html" target="_blank" class="special-link">Neural Network Coding (NNC)</a> standard
-                <a href="https://www.iso.org/standard/85545.html" target="_blank" class="special-link">(ISO/IEC 15938-17)</a>, and describes its software architecture and main coding tools.
-                We analyzed the underlying neural network weight distributions and information content to examine higher compression gains compared to other entropy codes like Huffman code,
-                but also that the average codeword length of NNCodec is often below the <strong>Shannon entropy bound</strong>. By introducing specifically trained local scaling parameters, NNCodec can compensate for quantization errors to a certain degree.
+                <a href="https://www.iso.org/standard/85545.html" target="_blank" class="special-link">(ISO/IEC 15938-17)</a>. The paper outlines the software architecture and main coding tools.
+                We analyzed the underlying neural network weight distributions and information content to examine higher compression gains compared to other entropy codes like Huffman coding.
+                Notably, the average codeword length of NNCodec often falls <strong>below the Shannon entropy bound</strong>.
+                Furthermore, by introducing specially trained local scaling parameters, NNCodec can effectively compensate for quantization errors to a certain extent.
                 <p><div class="buttons-container">
                     <a href="https://openreview.net/forum?id=5VgMDKUgX0" target="_blank" class="button">View Paper (OpenReview)</a>
                     <a href="https://github.com/fraunhoferhhi/nncodec" target="_blank" class="button">View Code</a>
@@ -384,14 +392,14 @@
                 <h4>Berlin Digital Rail Operations (BerDiBa) funded by the state of Berlin and the EU</h4>
                 <div class="subsubtitle">Co-authors: Nico Harder</div>
                 In the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/projects/berdiba.html" target="_blank" class="special-link">BerDiBa</a>
-                project, I developed highly efficient models for semantic segmentation of image data from
-                the driver's cab perspective of autonomous trains. I extended my
+                project, I developed algorithms to generate highly efficient models for semantic segmentation of image data from
+                the driver's cab perspective in autonomous trains. I enhanced my
                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-04083-2_14" target="_blank" class="special-link">explainability-driven, entropy-constrained
-                quantization method (ECQx)</a>, reducing DeepLabV3 precision to 2-4 bits and introducing high sparsity without
-                degrading performance. Additionally, we applied a specialized <strong>semantic knowledge distillation</strong> technique to
+                quantization method (ECQ<sup>x</sup>)</a>, reducing DeepLabV3 precision to 2-4 bits and introducing high sparsity without
+                compromising performance. Additionally, we applied a specialized <strong>semantic knowledge distillation</strong> technique to
                 extract compact student networks. Using
                 <a href="https://www.nature.com/articles/s42256-023-00711-8" target="_blank" class="special-link">Concept Relevance Propagation (CRP)</a>,
-                we identified network subgraphs highly relevant to specific classes or concepts, which can be dynamically
+                we identified network subgraphs highly <i>relevant</i> for specific classes&mdash;or concepts within classes&mdash;, which can be jointly
                 activated or deactivated through a gating mechanism: <strong>Mixture-of-Relevant-Experts</strong>.
                 <p><div class="buttons-container">
                     <a href="data/BerDiBa_MS_AP1-2_8.pdf" target="_blank" class="button">Slides</a>
@@ -405,11 +413,12 @@
                 <h4>ECQx: Explainability-Driven Quantization for Low-Bit and Sparse DNNs
                     <div class="subtitle">xxAI - Beyond Explainable AI, Lecture Notes in Computer Science (LNAI Vol. 13200)</div></h4>
                 <div class="subsubtitle">Co-authors: Maximilian Dreyer, Wojciech Samek, Karsten Müller, Sebastian Lapuschkin</div></h4>
-                The ECQx method leverages concepts of explainable AI (XAI) and of information theory in the quantization-aware training paradigm: Instead of assigning weight values solely based
+                The ECQ<sup>x</sup> method leverages concepts of explainable AI (XAI) and of information theory in the quantization-aware training paradigm: Instead of assigning weight values solely based
                 on their proximity to the quantization clusters, the method considers weight relevances obtained from
                 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140" target="_blank" class="special-link">Layer-wise Relevance Propagation (LRP)</a>
-                and the information content of the clusters (entropy optimization). A key insight is that <strong>weight magnitude is not necessarily correlated with weight relevance</strong>,
-                allowing us to preserve relevant weights from being quantized to zero and deactivate irrelevant high-magnitude weights/neurons.
+                and the information content of the clusters (entropy optimization).
+                A key insight is that <strong>weight magnitude is not necessarily correlated with weight relevance</strong>.
+                This allows us to preserve relevant weights from being quantized to zero while simultaneously deactivating irrelevant high-magnitude weights or neurons.
 
                 <p><div class="buttons-container">
                     <a href="https://link.springer.com/chapter/10.1007/978-3-031-04083-2_14" target="_blank" class="button">View Paper (Springer Link)</a>
