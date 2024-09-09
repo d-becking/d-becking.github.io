@@ -8,23 +8,41 @@
         :root {
             --mygreen: #4B5E44;
             --myrose: #BE7388;
+            --textwidth: 909px
         }
         body {
             font-family: Helvetica, Arial, sans-serif;
             font-size: 16px;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff;
         }
         .content {
-            max-width: 999px;
+            max-width: var(--textwidth);
             margin: 20px auto;
             padding: 30px;
             background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: none;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+        }
+        .projects {
+            max-width: var(--textwidth);
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
+            box-shadow: none;
+        }
+        .news-box {
+            max-width: var(--textwidth);
+            margin: 20px auto;
+            padding: 10px;
+            background: #fff;
+            /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
+            box-shadow: none;
+            line-height: 1.6;
         }
         .profile-img {
             margin-right: 20px;
@@ -37,7 +55,7 @@
             padding-right: 20px;
         }
         .name, .title {
-            font-size: 1.5em;
+            font-size: 24px;
             margin: 8px 0 0 0;
             color: black;
             text-align: left;
@@ -69,12 +87,12 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin: 9px 0;
+            /*margin: 9px 0;*/
             align-items: center;
         }
         .links a {
             text-decoration: none;
-            display: inline-block;
+            /*display: inline-block;*/
         }
         .links a:hover {
             background-color: #0C0E03;
@@ -83,10 +101,10 @@
             text-decoration: none;
             color: #fff;
             background-color: var(--mygreen);
-            padding: 6px 13px;
-            display: inline-flex;
-            font-size: 0.8em;
-            margin-top: -5px;
+            /*padding: 6px 13px;*/
+            /*display: inline-flex;*/
+            /*font-size: 0.8em;*/
+            /*margin-top: -5px;*/
         }
         .download-cv::before {
             content: '\2193';
@@ -98,14 +116,14 @@
             text-decoration: none;
             color: #fff;
             background-color: var(--mygreen);
-            padding: 0px 13px;
-            font-size: 0.85em;
-            margin-top: -5px;
-            display: inline-flex;
+            /*padding: 0px 13px;*/
+            /*font-size: 0.85em;*/
+            /*margin-top: 0px;*/
+            /*display: inline-flex;*/
         }
         .mail-icon {
             color: #fff;
-            font-size: 1.75em;
+            font-size: 1.5em;
             margin-right: 5px;
             vertical-align: middle;
         }
@@ -119,13 +137,6 @@
             border: none;
             border-top: 1px solid #ccc;
             margin: 20px 0;
-        }
-        .projects {
-            max-width: 999px;
-            margin: 20px auto;
-            padding: 30px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .projects .title {
             margin-bottom: 10px;
@@ -157,7 +168,8 @@
             background-color: var(--mygreen);
             padding: 8px 12px;
             margin-right: 10px;
-            font-size: 16px;
+            /*font-size: px;*/
+            line-height: 1;
         }
         .button:hover {
             background-color: #0C0E03;
@@ -167,22 +179,37 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .news-box {
-            max-width: 999px;
-            margin: 20px auto;
-            padding: 30px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            line-height: 1.6;
-        }
         .news-box .title {
             margin-bottom: 15px;
-            line-height: 1.6;
         }
         .spaced-news-list li {
             margin-bottom: 10px; /* Adjust this value as needed */
             margin-left: 20px;
         }
+
+        .download-cv, .mail-button, .button {
+            display: inline-flex;        /* Ensure the content inside the buttons is aligned */
+            align-items: center;         /* Vertically center the content */
+            justify-content: center;     /* Horizontally center the content */
+            height: 30px;                /* Set a fixed height (adjust this value as needed) */
+            padding: 0 10px;             /* Ensure consistent padding on the sides */
+            box-sizing: border-box;      /* Ensure padding does not affect button size */
+            font-size: 14px;
+        }
+        .links img {
+            height: 30px;                /* Set a fixed height for the icons to fit in the buttons */
+            width: auto;                 /* Keep the original aspect ratio */
+            padding: 0 0px;
+        }
+        .links a:not(.download-cv):not(.mail-button) {
+            display: inline-flex;        /* Ensure the content inside the links is aligned */
+            align-items: center;         /* Vertically center the content */
+            justify-content: center;     /* Horizontally center the content */
+            height: 30px;                /* Set the same fixed height */
+            padding: 0;                  /* Remove horizontal padding for the img.shields buttons */
+            box-sizing: border-box;      /* Ensure the button size is correct */
+        }
+
         @media (max-width: 768px) {
             body {
             font-size: 15px;
@@ -273,7 +300,7 @@
                     or split learning. My methods leverage <strong>explainable AI (XAI)</strong> techniques and concepts
                     of <strong>information theory</strong>.<br>
 
-                    As a regular attendee of Moving Picture Experts Group (MPEG) meetings since 2020, I contributed to the
+                    As a regular attendee of Moving Picture Experts Group (MPEG) meetings since 2020, I have contributed several compression tools and syntax to the
                     first and second editions of the <a href="https://www.iso.org/standard/85545.html" target="_blank"><strong>ISO/IEC 15938-17 </strong></a>
                     standard for
                     <a href="https://www.hhi.fraunhofer.de/en/departments/ai/research-groups/efficient-deep-learning/research-topics/neural-network-compression.html" target="_blank" class="special-link">Neural Network Coding (NNC)</a>.<br>
@@ -299,17 +326,18 @@
                 <a href="https://x.com/danielbecking" target="_blank">
                     <img src="https://img.shields.io/badge/X-4B5E44?style=for-the-badge&logo=x&logoColor=white" alt="X">
                 </a>
-                <a href="mailto:info@dbecking.com" class="mail-button"><span class="mail-icon">&#9993;</span>Send Mail</a>
+                <a href="mailto:info@dbecking.com" class="mail-button"><span class="mail-icon">
+                    &#9993;</span> Mail</a>
                 <a href="data/CV_2024.pdf" target="_blank" download class="download-cv">
-                    Download CV (2024)
+                    CV (2024)
                 </a>
             </div>
         </div>
     </div>
 
     <div class="news-box">
-        <hr>
         <div class="title">Latest News</div>
+        <hr>
         <ul class="spaced-news-list">
 
             <li><strong>2024/07</strong>: At the <a href="https://www.mpeg.org/meetings/mpeg-147/" target="_blank" class="special-link">147th MPEG meeting</a>
@@ -363,14 +391,14 @@
             <div class="project-description">
                 <h4>Neural Network Coding of Difference Updates for Efficient Distributed Learning Communication <div class="subtitle">IEEE Transactions on Multimedia Vol. 26, 2024</div></h4>
                 <div class="subsubtitle">Co-authors: Karsten Müller, Paul Haase, Heiner Kirchhoffer, Gerhard Tech, Wojciech Samek, Heiko Schwarz, Detlev Marpe, Thomas Wiegand</div>
-                Distributed learning requires frequent communication of neural network update data. For this, we present a set of new compression tools which
-                are specifically tailored to efficiently code incremental neural updates: <strong>Federated BatchNorm folding</strong> (FedBNF), structured and unstructured
+                To improve the efficiency of frequent neural data communication in distributed learning, we present a set of new compression tools specifically tailored for coding incremental neural updates.
+                These include <strong>Federated BatchNorm folding</strong> (FedBNF), structured and unstructured
                 sparsification, tensor row skipping, quantization optimization and temporal adaptations for improved context-adaptive binary arithmetic coding
                 (<a href="https://www.hhi.fraunhofer.de/en/departments/vca/research-groups/video-coding-technologies/research-topics/past-research-topics/context-based-adaptive-binary-arithmetic-coding-cabac.html" target="_blank" class="special-link">CABAC</a>).
-                Furthermore, we introduce the parameter update tree (PUT) syntax, which allows to identify updates for different neural network parameter sub-sets
-                and their relationship in synchronous and asynchronous communication scenarios from the bitstream. We benchmark the tools in multiple federated and split
-                learning (<strong>SplitFed</strong>) scenarios using a variety of models including <strong>ViTs</strong>.
-                <p><div class="buttons">
+                Furthermore, we introduce the parameter update tree (PUT) syntax, enabling identification of different neural network parameter subsets and their relationships in
+                (a)synchronous communication paradigms from the bitstream. We benchmark these tools in multiple federated and
+                <strong>SplitFed</strong> scenarios using a variety of models including <strong>ViTs</strong>.
+                <p><div class="buttons-container">
                     <a href="https://ieeexplore.ieee.org/document/10412190" target="_blank" class="button">View Paper (IEEE Xplore Open Access)</a>
                 </div></p>
             </div>
