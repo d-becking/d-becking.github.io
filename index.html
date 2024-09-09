@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Becking</title>
+    <link rel="icon" href="graphics/favicon.png" type="image/png">
     <style>
         :root {
             --mygreen: #4B5E44;
@@ -32,7 +33,6 @@
             margin: 20px auto;
             padding: 30px;
             background: #fff;
-            /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
             box-shadow: none;
         }
         .news-box {
@@ -40,13 +40,12 @@
             margin: 20px auto;
             padding: 10px;
             background: #fff;
-            /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
             box-shadow: none;
             line-height: 1.6;
         }
         .profile-img {
             margin-right: 20px;
-            margin-top: 45px;
+            margin-top: 48px;
             flex-shrink: 0;
         }
         .profile-img img {
@@ -61,7 +60,6 @@
             text-align: left;
         }
         .pronouns, .subtitle {
-            /*font-size: 16px;*/
             color: grey;
             margin-top: 5px;
             text-align: left;
@@ -87,12 +85,10 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            /*margin: 9px 0;*/
             align-items: center;
         }
         .links a {
             text-decoration: none;
-            /*display: inline-block;*/
         }
         .links a:hover {
             background-color: #0C0E03;
@@ -101,10 +97,6 @@
             text-decoration: none;
             color: #fff;
             background-color: var(--mygreen);
-            /*padding: 6px 13px;*/
-            /*display: inline-flex;*/
-            /*font-size: 0.8em;*/
-            /*margin-top: -5px;*/
         }
         .download-cv::before {
             content: '\2193';
@@ -116,10 +108,6 @@
             text-decoration: none;
             color: #fff;
             background-color: var(--mygreen);
-            /*padding: 0px 13px;*/
-            /*font-size: 0.85em;*/
-            /*margin-top: 0px;*/
-            /*display: inline-flex;*/
         }
         .mail-icon {
             color: #fff;
@@ -168,7 +156,6 @@
             background-color: var(--mygreen);
             padding: 8px 12px;
             margin-right: 10px;
-            /*font-size: px;*/
             line-height: 1;
         }
         .button:hover {
@@ -183,31 +170,31 @@
             margin-bottom: 15px;
         }
         .spaced-news-list li {
-            margin-bottom: 10px; /* Adjust this value as needed */
+            margin-bottom: 10px;
             margin-left: 20px;
         }
 
         .download-cv, .mail-button, .button {
-            display: inline-flex;        /* Ensure the content inside the buttons is aligned */
-            align-items: center;         /* Vertically center the content */
-            justify-content: center;     /* Horizontally center the content */
-            height: 30px;                /* Set a fixed height (adjust this value as needed) */
-            padding: 0 10px;             /* Ensure consistent padding on the sides */
-            box-sizing: border-box;      /* Ensure padding does not affect button size */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            padding: 0 10px;
+            box-sizing: border-box;
             font-size: 14px;
         }
         .links img {
-            height: 30px;                /* Set a fixed height for the icons to fit in the buttons */
-            width: auto;                 /* Keep the original aspect ratio */
+            height: 30px;
+            width: auto;
             padding: 0 0px;
         }
         .links a:not(.download-cv):not(.mail-button) {
-            display: inline-flex;        /* Ensure the content inside the links is aligned */
-            align-items: center;         /* Vertically center the content */
-            justify-content: center;     /* Horizontally center the content */
-            height: 30px;                /* Set the same fixed height */
-            padding: 0;                  /* Remove horizontal padding for the img.shields buttons */
-            box-sizing: border-box;      /* Ensure the button size is correct */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         @media (max-width: 768px) {
@@ -426,7 +413,7 @@
         <div class="project">
             <img src="graphics/BerDiBa.png" alt="BerDiBa">
             <div class="project-description">
-                <h4>Berlin Digital Rail Operations (BerDiBa) funded by the state of Berlin and the EU</h4>
+                <h4>Berlin Digital Rail Operations (BerDiBa)<div class="subtitle">funded by the city of Berlin and the EU</div></h4>
                 <div class="subsubtitle">Co-authors: Nico Harder, Maximilian Dreyer</div>
                 In the <a href="https://www.hhi.fraunhofer.de/en/departments/ai/projects/berdiba.html" target="_blank" class="special-link">BerDiBa</a>
                 project, I developed algorithms to generate highly efficient models for semantic segmentation of image data from
@@ -448,7 +435,7 @@
             <img src="graphics/ecqx.png" alt="BerDiBa">
             <div class="project-description">
                 <h4>ECQx: Explainability-Driven Quantization for Low-Bit and Sparse DNNs
-                    <div class="subtitle">xxAI - Beyond Explainable AI, Lecture Notes in Computer Science (LNAI Vol. 13200)</div></h4>
+                    <div class="subtitle">xxAI - Beyond Explainable AI, Lecture Notes in Computer Science Vol. 13200</div></h4>
                 <div class="subsubtitle">Co-authors: Maximilian Dreyer, Wojciech Samek, Karsten Müller, Sebastian Lapuschkin</div></h4>
                 The ECQ<sup>x</sup> method leverages concepts of explainable AI (XAI) and of information theory in the quantization-aware training paradigm: Instead of assigning weight values solely based
                 on their proximity to the quantization clusters, the method considers weight relevances obtained from
